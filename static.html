@@ -1,0 +1,116 @@
+<!doctype html>
+<html>
+
+<head>
+    <title>Todo application</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style_modal.css" rel="stylesheet">
+    <script src="js/data.js" defer></script>
+    <script src="js/modal_script.js" defer></script>
+    <!-- <script>console.log(taskData)</script> -->
+</head>
+
+<body>
+    <nav>
+        <h3>My tasks</h3>
+        <div>
+            <h4>
+                <a href="#">All tasks</a>
+            </h4>
+            <h4>
+                <a href="#">Pending</a>
+            </h4>
+            <h4>
+                <a href="#">Completed</a>
+            </h4>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <header>
+                <h1>All tasks</h1>
+                <h3>2 tasks due, 4 tasks total</h3>
+                <button type="submit" id="open_modal">Write</button>
+            </header>
+            <ul id="task_list">
+                <!-- <li class="overdue">
+                    <input type="checkbox" id="task_0">
+                    <label for="task_0">First task</label>
+                    <div id="task_desc">
+                        <p>Description for the first task</p>
+                        <p>Due: 10 November 2024</p>
+                    </div>
+                    <p class="task_actions"><button class="edit_task">Edit</button><button
+                            class="delete_task">Delete</button></p>
+                </li> -->
+                <!-- <li id="task_container">
+                    <input type="checkbox" id="task_1"><label for="task_1">Second task</label>
+                    <p>Description (task 2)</p>
+                    <p>Due: 22 November 2024</p>
+                    <p class="task_actions"><button class="edit_task">Edit</button><button
+                            class="delete_task">Delete</button></p>
+                </li> -->
+                <!-- <li>
+                    <input type="checkbox" id="task_2" checked><label for="task_2">Another task</label>
+                    <p>This task is already done.</p>
+                    <p>Due: 10 October 2024</p>
+                    <p class="task_actions"><button class="edit_task">Edit</button><button
+                            class="delete_task">Delete</button></p>
+                </li>
+                <li>
+                    <input type="checkbox" id="task_3" checked><label for="task_3">Another completed task</label>
+                    <p>This task is done (and older than the previous one).</p>
+                    <p>Due: 1 October 2024</p>
+                    <p class="task_actions"><button class="edit_task">Edit</button><button
+                            class="delete_task">Delete</button></p>
+                </li> -->
+            </ul>
+        </section>
+
+        <section>
+            <div class="new_task" id="modal_wrapper">
+                <div id="modal_contents">
+                    <h3>Create new task</h3>
+
+                    <input type="text" placeholder="Task title" id="new_task_title">
+                    <textarea placeholder="Task description" id="new_task_description"></textarea>
+                    <input type="date" id="new_task_due_date">
+
+                    <button type="submit" id="save_task">Save task</button>
+                    <button type="submit" id="close_modal">Close</button>
+                </div>
+            </div>
+        </section>
+        <section id="edit_taskItem">
+            <div class="new_task" id="edit_modal_wrapper">
+                <div id="edit_modal_contents">
+                    <h3>Edit Task</h3>
+                    <input type="text" hidden id="task_id" />
+                    <input type="text" placeholder="Task title" id="edit_task_title">
+                    <textarea placeholder="Task description" id="edit_task_description"></textarea>
+                    <input type="date" id="edit_task_due_date">
+
+                    <button type="submit" id="edit_save_task">Update Task</button>
+                    <button type="submit" id="edit_close_modal">Cancel</button>
+
+
+                </div>
+
+        </section>
+        <!-- <hr>
+        <section id="new_task">
+            <h3>Create new task</h3>
+
+            <input type="text" placeholder="Task title" id="new_task_title">
+            <textarea placeholder="Task description" id="new_task_description"></textarea>
+            <input type="date" id="new_task_due_date">
+
+            <button type="submit" id="save_task">Save task</button>
+        </section> -->
+        </section>
+    </main>
+
+</body>
+
+</html>
